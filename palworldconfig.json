@@ -1,0 +1,137 @@
+[
+    {
+        "DisplayName":"Public Port",
+        "Category":"Palworld Server Settings",
+        "Description":"",
+        "Keywords":"",
+        "FieldName":"$GamePort",
+        "InputType":"number",
+        "Hidden":true,
+        "ParamFieldName":"/Script/Pal.PalGameWorldSettings.PublicPort",
+        "EnumValues":{}
+    },
+    {
+        "DisplayName":"RCON Port",
+        "Category":"Palworld Server Settings",
+        "Description":"",
+        "Keywords":"",
+        "FieldName":"$RCONPort",
+        "InputType":"number",
+        "Hidden":true,
+        "ParamFieldName":"/Script/Pal.PalGameWorldSettings.RCONPort",
+        "EnumValues":{}
+    },
+    {
+        "DisplayName":"Public IP",
+        "Category":"Palworld Server Settings",
+        "Description":"",
+        "Keywords":"",
+        "FieldName":"$ExternalIP",
+        "InputType":"text",
+        "Hidden":true,
+        "ParamFieldName":"/Script/Pal.PalGameWorldSettings.PublicIP",
+        "EnumValues":{}
+    },
+    {
+        "DisplayName":"Enable RCON",
+        "Category":"Palworld Server Settings",
+        "Description":"",
+        "Keywords":"",
+        "FieldName":"RCONEnabled",
+        "InputType":"text",
+        "Hidden":true,
+        "ParamFieldName":"/Script/Pal.PalGameWorldSettings.RCONEnabled",
+        "DefaultValue":"True",
+        "EnumValues":{}
+    },
+    {
+        "DisplayName":"Server Name",
+        "Category":"Palworld Server Settings",
+        "Description":"Sets the name of the server that is displayed in the server list",
+        "Keywords":"server,name,servername",
+        "FieldName":"ServerName",
+        "InputType":"text",
+        "Hidden":true,
+        "ParamFieldName":"/Script/Pal.PalGameWorldSettings.ServerName",
+        "DefaultValue":"AMP Powered Palworld Server",
+        "EnumValues":{}
+    },
+    {
+        "DisplayName":"Server Description",
+        "Category":"Palworld Server Settings",
+        "Description":"Sets the server description as it appears publicly",
+        "Keywords":"server,description,ServerDescription",
+        "FieldName":"ServerDescription",
+        "InputType":"text",
+        "Hidden":true,
+        "ParamFieldName":"/Script/Pal.PalGameWorldSettings.ServerDescription",
+        "DefaultValue":"",
+        "EnumValues":{}
+    },
+    {
+        "DisplayName":"Make Community Server",
+        "Category":"Palworld Server Settings",
+        "Description":"If enabled, the server will appear in the list of community servers in-game",
+        "Keywords":"community,server,public",
+        "FieldName":"CommunityServer",
+        "InputType":"checkbox",
+        "ParamFieldName":"CommunityServer",
+        "DefaultValue":"EpicApp=PalServer ",
+        "EnumValues":{
+            "False":"",
+            "True":"EpicApp=PalServer "
+        }
+    },
+    {
+        "DisplayName":"Server Password",
+        "Category":"Palworld Server Settings",
+        "Description":"Sets the password required for players to join the server. Default is no password",
+        "Keywords":"password,server,serverpassword",
+        "FieldName":"ServerPassword",
+        "InputType":"password",
+        "Hidden":true,
+        "ParamFieldName":"/Script/Pal.PalGameWorldSettings.ServerPassword",
+        "DefaultValue":"",
+        "EnumValues":{}
+    },
+    {
+        "DisplayName":"RCON/Admin Password",
+        "Category":"Palworld Server Settings",
+        "Description":"See the Security and Privacy menu for configurable options for the server's RCON password. The RCON password is also used in the in-game console for players to access administrator commands",
+        "Keywords":"rcon,password,admin,adminpassword",
+        "FieldName":"$RemoteAdminPassword",
+        "InputType":"hidden",
+        "Hidden":true,
+        "ParamFieldName":"/Script/Pal.PalGameWorldSettings.AdminPassword",
+        "EnumValues":{}
+    },
+    {
+        "DisplayName":"Player Limit",
+        "Category":"Palworld Server Settings",
+        "Description":"Sets the maximum number of players allowed on the server at one time",
+        "Keywords":"max,players,slots,limit,ServerPlayerMaxNum",
+        "FieldName":"$MaxUsers",
+        "InputType":"number",
+        "MinValue":"1",
+        "MaxValue":"32",
+        "ParamFieldName":"/Script/Pal.PalGameWorldSettings.ServerPlayerMaxNum",
+        "DefaultValue":"32",
+        "Placeholder":"32",
+        "Suffix":"players",
+        "EnumValues":{}
+    },
+    {
+        "DisplayName":"Enable Multi-Threaded Performance Improvements",
+        "Category":"Palworld Server Settings",
+        "Description":"If enabled, the server's performance will be enhanced in multi-threaded CPU environments",
+        "Keywords":"multi,thread,threaded,performance,improvements",
+        "FieldName":"MultiThread",
+        "InputType":"checkbox",
+        "ParamFieldName":"MultiThread",
+        "DefaultValue":"-useperfthreads -NoAsyncLoadingThread -UseMultithreadForDS ",
+        "EnumValues":{
+            "False":"",
+            "True":"-useperfthreads -NoAsyncLoadingThread -UseMultithreadForDS "
+        }
+    }
+]
